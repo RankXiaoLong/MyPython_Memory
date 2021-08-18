@@ -25,3 +25,13 @@ df = pd.DataFrame(data, columns=["城市", "省份"])
 
 Se_to_df_city = pd.DataFrame({"city": series_city, "province": series_province}) # muti series
 Se_to_df_city.rename(columns={"city": "城市"})
+
+#  Application
+df.head(2)
+df.tail(2)
+df.shape  # shape
+
+df[['城市', '省份']] # slides
+df.iloc[0, 0] # 厦门
+df.iloc[0, :] # first row
+df.iloc[:, 0] # first column
