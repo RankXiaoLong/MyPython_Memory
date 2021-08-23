@@ -63,6 +63,7 @@ for index in range(len(df)):
             skills.extend(i.split("/"))
             # print(skills)
         for skill in skills:
+            # 分离中文和英文
             uncn = re.compile(r'[\u0061-\u007a,\u0020]')
             skill_language.append("".join(uncn.findall(skill.lower())))
             # print(skill_language)
